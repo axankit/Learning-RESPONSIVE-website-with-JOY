@@ -88,3 +88,73 @@
      letter-spacing: var(--ls);
      font-weight: 700;
 }
+
+
+/* ? styles rules for hero section */
+
+.hero{
+     background-color: var(--color-green-100);
+}
+
+/* ? styles rules for  navbar*/
+
+
+.navbar{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 30px 0;
+}
+
+.navbar__logo{
+     display: flex;
+     align-items: center;
+     gap: 20px;
+}
+
+.navbar__logo--text{
+     font: var(--font-2);
+     color: var(--color-white-100);
+     font-weight: 500;
+     font-size: var(--h2);
+}
+
+.navbar__menu{
+     font-size: var(--h5);
+     font: var(--color-white-100);
+     display: flex;
+     gap: 15px;
+}
+
+.navbar__menu a{
+     text-decoration: none;
+     color: var(--color-white-100);
+}
+
+
+.container{
+     max-width: 1140px;
+     margin: auto;
+     border: 2px solid ;
+}
+
+@media (max-width:1200px){
+     .container{
+          max-width: 970px;
+     }
+}
+@media (max-width:1024px){
+     .container{
+          max-width: 740px;
+     }
+}
+@media (max-width:768px){
+     .container{
+          max-width: 500px;
+     }
+}
+@media (max-width:568px){
+     .container{
+          max-width: 90%;
+     }
+}
