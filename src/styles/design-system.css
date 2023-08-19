@@ -132,12 +132,14 @@
      color: var(--color-white-100);
 }
 
-
+/* We do this as to make our website responsive */
 .container{
      max-width: 1140px;
      margin: auto;
      /* border: 2px solid ; */
 }
+
+
 
 .navbar__icon{
      display: none;
@@ -154,6 +156,7 @@
 }
 
 
+
 /* media query as desktop first approach  */
 
 /* ? Desktop */
@@ -168,6 +171,7 @@
      .container{
           max-width: 740px;
      }
+     
 }
 
 /* ? Tablet */
@@ -177,17 +181,35 @@
      }
 
      .navbar__menu{
-          /* display: none; */
           position: absolute;
-          top:35px;
+          top:15vh;
           left: 0;
           width: 100%;
           height: 100vh;
+          background-color: var(--color-green-100); 
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap:50px;
+          /* border: 2px solid pink; */
+
      }
 
      .navbar__icon{
           display: block;
+          /* border: 2px solid red; */
      }
+
+     .navbar__menu--home {
+          margin-top: -200px;
+        }
+
+     .hidden{
+         opacity: 0%;
+     }
+     
 }
 
 /* ? Mobile */
